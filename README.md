@@ -1,2 +1,2 @@
 # ckmio-node
-A Javascript Client for Node Js
+A CKMIO Client for Node Js

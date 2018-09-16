@@ -1,1 +1,1 @@
-require("./topic-index");
+require("./funnel-index");

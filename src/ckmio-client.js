@@ -51,7 +51,7 @@ function amleneResponseHandler(response, client){
 
 export default class CkmioClient {
     constructor(options) {
-        this.host = "dev.ckmio.com";
+        this.host = "ckmio.com";
         this.port = 7023;
         this.options = options;
         this.connection = new Socket();

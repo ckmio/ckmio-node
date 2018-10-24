@@ -1,10 +1,6 @@
 import CkmioClient from "./ckmio-client";
 
 let producer = new CkmioClient({planKey : "community-test-key", planSecret : "community-test-secret", user : "Producer"});
-producer.subscribeToChat((message)=> {
-	console.log(`Mamadou received a message from ${message.from} \n ${message.content}`);
-});
-
 
 let consumer1 = new CkmioClient({planKey : "community-test-key", planSecret : "community-test-secret", user : "Consumer1"});
 consumer1.funnel("A brand new Stream", [{field: "name", op: "contains", value :"Bob"}],
